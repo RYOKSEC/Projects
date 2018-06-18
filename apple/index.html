@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>APPLE المملكة العربية السعودية</title>
+<link rel="icon" href="img\icon.png" >
+<style>
+
+#navigation{
+margin-top: 0;
+   height: 50px;
+   background-color: #323232;
+   position: absolute;
+   width: 1330px;
+   padding-bottom: 10px;
+   margin-top: 0px;
+}
+ul{
+list-style: none;
+}
+
+ul li {
+  font-family: "SF Pro AR","SF Pro Gulf","SF Pro Text","Gulf","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+
+  font-size: 18px;
+  float: left;
+  padding-left: 100px;
+
+}
+#navigation ul li a {
+  text-decoration: none;
+  color: lightgrey;
+  transition: color 0.5s ;
+}
+#navigation ul li a:hover{
+color: yellow;
+}
+#img1{
+  margin-top: 10px;
+  height: 800px;
+
+}
+#iphonex{
+  padding-left: 200px;
+  background-color: #f2f2f2;
+  width: 1150px;
+}
+#headline{
+  font-size: 45px;
+  padding-top: 100px;
+  padding-left: 550px;
+  font-family: "SF Pro AR","SF Pro Gulf","SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+#headline2{
+  font-size: 40px;
+  padding-top: 0px;
+  padding-left: 560px;
+  font-weight: 100;
+}
+#link{
+  font-size: 40px;
+  padding-left: 450px;
+  font-family: fantasy;
+position: absolute;
+top: 880px;
+text-decoration: none;
+color: white;
+
+
+}
+
+
+</style>
+
+</head>
+<body>
+
+<div id="navigation">
+  <ul>
+    <li><a href="#">اماكن الشراء</a></li>
+    <li><a href="#">الدعم</a></li>
+    <li><a href="#">Music</a></li>
+    <li><a href="#">Tv</a></li>
+    <li><a href="#">Watch</a></li>
+    <li><a href="#">IPhone</a></li>
+    <li><a href="#">IPad</a></li>
+    <li><a href="#">Mac</a></li>
+  </ul>
+<h2 id="headline">IPhone X</h2>
+<h3 id="headline2">اهلا بالمستقبل</h3>
+</div>
+
+<div id="iphonex">
+<img src="img\1.jpg" height="700px" width="900 px"id="img1">
+</div>
+
+<div id="red">
+<a href="#" id="link">IPhone 8 اعرف المزيد عن</a>
+  <img src="img\iphone red.png" id="iphone2" width="1330px">
+</div>
+
+
+
+
+
+
+
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+
+var navbar1 = document.getElementById("navigation");
+
+var sticky = navbar1.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar1.classList.add("sticky")
+  } else {
+    navbar1.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<meta charset="utf-8">
+<title>متوسط حسابي لعددين</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+  </head>
+<style>
+#paragraph{
+  font-size: 20px ;
+  font-style: italic;
+  padding-top: 20px;
+}
+#container{
+  margin-right: 400px;
+  margin-left: 300px;
+  margin-top: 20px;
+
+
+}
+#firstnumper{
+  float: right;
+  background-color:yellow;
+  margin-right: 20px;
+  text-align: center;
+}
+#secondnumper{
+  background-color: yellow;
+  margin-left: 20px;
+  text-align: center;
+}
+#base{
+background: linear-gradient(pink 40%,aqua);
+height: 200px;
+}
+#submit{
+
+background-color: purple;
+color: white;
+width: auto;
+font-size: 20px;
+}
+#done{
+  color: aqua;
+  height: 40px;
+  background:linear-gradient(#ff3399,#0066ff);
+  font-size: 30px;
+ padding-bottom:5px;
+}
+
+</style>
+
+
+<body>
+  <div id="container">
+    <div id="base">
+<center><p id="paragraph">ضع العدد الاول في الفراغ الاول و الثاني في الفراغ الثاني لحساب المتوسط الحسابي <p></center>
+<input type="number" id="firstnumper">
+<input type="number" id="secondnumper">
+<br />
+<br />
+<center><button type="submit" id="submit" onclick="M()">حساب المتوسط</button></center>
+<center><p id="resault"><p></center>
+</div>
+
+<div id="done">
+<p id="made">made with love and javascript by RYOK<p>
+  <div>
+
+<script>
+
+function M() {
+  var x = document.getElementById("firstnumper").value;
+  var y = document.getElementById("secondnumper").value;
+  var z = y/2 + x/2;
+document.getElementById("resault").innerHTML = z ;
+}
+
+</script>
+
+
+
+
+</div>
+</body>
+
+
+
+
+
+</html>
